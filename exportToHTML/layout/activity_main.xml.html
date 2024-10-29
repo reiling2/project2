@@ -1,0 +1,345 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;androidx.drawerlayout.widget.DrawerLayout</span>
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/drawer_layout&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:fitsSystemWindows</span><span class="s2">=&quot;true&quot;</span>
+    <span class="s1">tools:openDrawer</span><span class="s2">=&quot;start&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s4">&lt;!-- Основной контент приложения --&gt;</span>
+    <span class="s0">&lt;include</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/app_bar_main&quot;</span>
+        <span class="s1">layout</span><span class="s2">=&quot;@layout/app_bar_main&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s4">&lt;!-- Боковая панель навигации --&gt;</span>
+    <span class="s0">&lt;com.google.android.material.navigation.NavigationView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/nav_view&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;280dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;start&quot;</span>
+        <span class="s1">android:fitsSystemWindows</span><span class="s2">=&quot;true&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s4">&lt;!-- Включаем кастомный макет --&gt;</span>
+        <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+            <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#FBFBFB&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s4">&lt;!-- Пример добавления кастомных элементов --&gt;</span>
+
+            <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#FBFBFB&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s4">&lt;!-- Пример добавления кастомных элементов --&gt;</span>
+
+                <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                    <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#FBFBFB&quot;</span>
+                    <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;27dp&quot;</span>
+                    <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;26dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s4">&lt;!-- Пример добавления кастомных элементов --&gt;</span>
+
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/poderjka2&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;125dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;76dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Выход&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.174&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/poderjka&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/poderjka&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;125dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;272dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Поддержка&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.174&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/Settings&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/profile&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;125dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;576dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Профиль&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.174&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;1.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;androidx.appcompat.widget.Toolbar</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;280dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@color/fon&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:popupTheme</span><span class="s2">=&quot;@style/ThemeOverlay.AppCompat.Light&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;androidx.constraintlayout.widget.Guideline</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/guideline6&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                        <span class="s1">app:layout_constraintGuide_begin</span><span class="s2">=&quot;20dp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/spravochnik&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;227dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;252dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Справочник по экологии&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.509&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/kalkylyator&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/kalkylyator&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;38dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;452dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Эко-калькулятор&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.337&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/Settings&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;125dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;312dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Настройки&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.174&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/spravochnik&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/meropriyatiay&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;188dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;412dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Эко-мероприятия&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.293&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/dosijenya&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/dosijenya&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;188dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;520dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;sans-serif-smallcaps&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Мои достижения&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#000000&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.293&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.797&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#070707&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/grennguide&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;153dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;46dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#00FAFAFA&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#E69494&quot;</span>
+                        <span class="s1">android:backgroundTintMode</span><span class="s2">=&quot;src_atop&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Green Guide&quot;</span>
+                        <span class="s1">android:textAlignment</span><span class="s2">=&quot;viewStart&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;#1BD727&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.212&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.95&quot;</span>
+                        <span class="s1">app:rippleColor</span><span class="s2">=&quot;#E9CCCC&quot;</span>
+                        <span class="s1">app:strokeColor</span><span class="s2">=&quot;#3F51B5&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;ImageButton</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/avatar&quot;</span>
+                        <span class="s1">:tint</span><span class="s2">=&quot;#007822DD&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;95dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;89dp&quot;</span>
+                        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;112dp&quot;</span>
+                        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#00FFFFFF&quot;</span>
+                        <span class="s1">android:scaleType</span><span class="s2">=&quot;centerCrop&quot;</span>
+                        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintCircleRadius</span><span class="s2">=&quot;&quot;</span>
+                        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+                        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@+id/toolbar&quot;</span>
+                        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span>
+                        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@mipmap/ic_avatar&quot; </span><span class="s0">/&gt;</span>
+
+
+                    <span class="s4">&lt;!-- Добавляем текстовое поле --&gt;</span>
+
+                    <span class="s4">&lt;!-- Пример добавления кнопки --&gt;</span>
+
+                <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+                <span class="s0">&lt;androidx.constraintlayout.widget.Guideline</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/guideline5&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                    <span class="s1">app:layout_constraintGuide_begin</span><span class="s2">=&quot;20dp&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;androidx.constraintlayout.widget.Guideline</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/guideline6&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">app:layout_constraintGuide_begin</span><span class="s2">=&quot;20dp&quot; </span><span class="s0">/&gt;</span>
+
+
+                <span class="s4">&lt;!-- Добавляем текстовое поле --&gt;</span>
+
+                <span class="s4">&lt;!-- Пример добавления кнопки --&gt;</span>
+
+            <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+
+
+            <span class="s0">&lt;androidx.constraintlayout.widget.Guideline</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/guideline5&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                <span class="s1">app:layout_constraintGuide_begin</span><span class="s2">=&quot;20dp&quot; </span><span class="s0">/&gt;</span>
+
+
+
+            <span class="s4">&lt;!-- Добавляем текстовое поле --&gt;</span>
+
+            <span class="s4">&lt;!-- Пример добавления кнопки --&gt;</span>
+
+        <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+    <span class="s0">&lt;/com.google.android.material.navigation.NavigationView&gt;</span>
+
+<span class="s0">&lt;/androidx.drawerlayout.widget.DrawerLayout&gt;</span>
+</pre>
+</body>
+</html>
